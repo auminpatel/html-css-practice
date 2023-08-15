@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Practice</title>
+    <style>
+        *  {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            grid-template-columns: auto auto auto;
+            display: inline-grid;
+        }
+        ul li {
+            list-style: none;
+            padding: 0 10px;
+        }
+        header {
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        header div {
+            flex: 1
+        }
+        .container1 img , .container2 img {
+            width: 100%;
+        }
+        .container2 {
+            display: inline-grid;
+            grid-template-columns: auto auto auto;
+        }
+        .container2 div {
+            padding: 20px;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+        <div>L</div>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container1"><img src="./photo.jpg" /></div>
+    <div class="container2">
+      <div class="childContiner1"><img src="./contact.jpg"/></div>
+      <div class="childContiner2"><img src="./contact.jpg"/></div>
+      <div class="childContiner3"><img src="./contact.jpg"/></div>
+    </div>
+  </body>
+</html>
